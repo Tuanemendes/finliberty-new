@@ -9,6 +9,7 @@ import{filterListByMonth} from "../helpers/dateFilter";
 
 import Layout from "../components/Layout";
 import TableArea from "../components/TableArea";
+import Resume from "@/components/Resume";
 
 
 
@@ -28,9 +29,11 @@ export default function Home() {
 
   }, [list, currentMonth]);
   return <Layout title="Home Page">
-    <div className="flex justify-center items-center mt-4">
+    <div className="flex justify-center flex-col items-center mt-5">
+      <Resume></Resume>
+
     
-    <TableArea list={filteredList}/>
+      <TableArea list={filteredList}/>
     </div>
       
   </Layout>;

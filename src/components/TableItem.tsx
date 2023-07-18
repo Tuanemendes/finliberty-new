@@ -1,6 +1,12 @@
 import { Item } from '@/types/Item'
 import React from 'react'
 import {categories} from '../data/categories'
+import {
+    FaAngleDown,
+    FaAngleUp,
+    FaTrashAlt,
+} from 'react-icons/fa'
+
 
 
 type Props = {
@@ -8,19 +14,28 @@ type Props = {
 }
 const TableItem = ({item}: Props) => {
     const category = categories[item.category];
+    const categoryExpense =  category.expense ? <FaAngleDown color="red" />  : <FaAngleUp color="green" />;
+    const categoryStyle = {
+        backgroundColor: category.color,
+        color: 'black',
+        borderRadius: '0.25rem',
+        padding: '0.25rem 0.5rem',
+        display: 'inline-block',
+    };
 
   return (
      <tr>
         <td className='p-3'>{item.date.toLocaleDateString()}</td>
         <td>
-            <div className={`inline-block 
-            py-1 px-2
-            rounded text-black bg-${category.color}-300`} >
-                {category.title}
-            </div>
+        <div style={categoryStyle}>{category.title}</div>
         </td>
         <td>{item.title}</td>
-        <td>R$ {item.value.toFixed(2)}</td>
+        <td>
+            <div className='flex justify-start items-center'>
+            {categoryExpense}
+            R$ {item.value.toFixed(2)}
+            </div>
+        </td>
     </tr>
   )
 }
