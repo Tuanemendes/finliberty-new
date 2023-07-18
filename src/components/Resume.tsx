@@ -1,21 +1,24 @@
+import { type } from 'os';
 import React from 'react'
 
-import {
-    CiCirclePlus,
-    CiCircleMinus,
-    CiDollar
-} from "react-icons/ci";
+
+import ResumeItem from './ResumeItem';
 
 
-const Resume = () => {
+type Props = {
+  children: React.ReactNode;
+  expense: number;
+  income: number;
+  balance: number;
+
+}
+const Resume = ({income,expense,balance} : Props) => {
   return (
-    <div className=' text-black w-full p-8 shadow-md bg-white rounded-lg '>
-        <div className='flex justify-around items-center'>
-            <div className=' border-2 border-orange-700 py-6 px-20 rounded-2xl shadow-xl'  > <CiCirclePlus/><p>Entrada</p></div>
-            <div className='py-6 px-20'> <CiCircleMinus/>Saida</div>
-            <div className='py-6 px-20'><CiDollar/>Total</div>
-        </div>
-        
+    <div className=' flex justify-between text-black w-full p-8 shadow-md bg-white rounded-lg '>
+
+        <ResumeItem title="Entrada" value={income}/>
+        <ResumeItem title="saída" value={expense}/>
+        <ResumeItem title="Total" value={balance}/>
     </div>
   )
 }

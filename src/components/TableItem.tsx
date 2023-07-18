@@ -4,7 +4,7 @@ import {categories} from '../data/categories'
 import {
     FaAngleDown,
     FaAngleUp,
-    FaTrashAlt,
+  
 } from 'react-icons/fa'
 
 
