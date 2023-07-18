@@ -2,27 +2,27 @@ import { Item } from "../types/Item";
 
 export const itens: Item[] = [
     {
-        date:new Date(2021, 0, 1),
-        category: 'Salary',
+        date: new Date(2023, 7, 15),
+        category: 'salary',
         title: 'Salario TMB',
         value: 2000.50
     },
     {
-        date:new Date(2021, 0, 1),
-        category: 'Food',
+        date: new Date(2023, 7, 7),
+        category: 'food',
         title: 'Saraivas food',
-        value: 2000.50
+        value: 20.50
     },
     {
-        date:new Date(2021, 0, 1),
+        date: new Date(2023, 7, 1),
         category: 'rent',
         title: 'Aluguel',
-        value: 2000.50
+        value: 800
     },
     {
-        date:new Date(2021, 0, 1),
-        category: 'Supermarket',
+        date: new Date(2023, 10, 1),
+        category: 'supermarket',
         title: 'Compra de mês',
-        value: 2000.50
+        value: 500.50
     },
 ]

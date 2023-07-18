@@ -29,7 +29,9 @@ export default function Home() {
   }, [list, currentMonth]);
   return <Layout title="Home Page">
     <div className="flex justify-center items-center mt-4">
-      </div>
-      <TableArea/>
+    
+    <TableArea list={filteredList}/>
+    </div>
+      
   </Layout>;
 }
