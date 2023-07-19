@@ -22,8 +22,6 @@
 
 |                                                                                                                            |                                                  |
 | :------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------: |
-| <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" width="40" height="40" />  |                       HTML                       |
-|  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" width="40" height="40" />   |                       CSS                        |
 | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="40" height="40" /> |                    JavaScript                    |
 |     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="40" height="40" />     | TypeScript |
 |     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg" width="40" height="40" />     | Next.js |
