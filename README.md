@@ -36,9 +36,14 @@ Recriação do projeto controle finaceiro pessoal com a utilização das tecnolo
 </p>
 <p>
 
+Foi utilidado plug-in especial chamado "Forms" que oferece uma redefinição básica para estilos de formulário. Esse plug-in facilita a estilização de elementos de formulário por meio do uso de classes utilitárias do Tailwind CSS
+
+Documetação -> [tailwindcss/forms](!https://github.com/tailwindlabs/tailwindcss-forms)
 </p>
 
 ```
+npm install -D @tailwindcss/forms
+
 
 ```
 

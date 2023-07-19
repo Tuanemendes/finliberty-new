@@ -69,20 +69,13 @@ export default function Home() {
       <Resume income={income} expense={expense} balance={balance}>
 
       </Resume>
-      <div className="flex  w-full mt-6 text-black p-8 shadow-md bg-white rounded-l text-xl">
+      <div className="flex  mt-6 text-black p-8 shadow-md bg-white rounded-l text-xl">
       <TableInsert 
       currentMonth={currentMonth}
-      onMonthChange={handleMonthChange}
-      
-      
+      onMonthChange={handleMonthChange} 
       />
       <InputArea onAdd={handleAddItem}/>
-
-
       </div>
-      
-
-    
       <TableArea list={filteredList}/>
     </div>
       
