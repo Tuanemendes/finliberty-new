@@ -1,3 +1,58 @@
+# FinLiberty-New
+
+<div align="left">
+
+![Badge em Desenvolvimento ](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
+
+</div>
+<h2>Índice</h2>
+
+- [Descrição do Projeto](#descrição-do-projeto)
+- [Tecnologias utilizadas](#tecnologias-utilizadas)
+- [Detalhes do Projeto](#detalhes-do-projeto)
+- [Desenvolvido Por](#desenvolvido-por)
+
+<h2>💻 Descrição do Projeto</h2>
+
+<p>
+
+</p>
+
+<h2>💻Tecnologias Utilizadas</h2>
+
+|                                                                                                                            |                                                  |
+| :------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------: |
+| <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="40" height="40" /> |                    JavaScript                    |
+|     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="40" height="40" />     | TypeScript |
+|     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg" width="40" height="40" />     | Next.js |
+|     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" width="40" height="40" />     | TailwindCSS |
+|     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" width="40" height="40" />     | [VScode](https://code.visualstudio.com/download) |
+
+
+<h2>💻Detalhes do Projeto</h2>
+
+<p>
+Recriação do projeto controle finaceiro pessoal com a utilização das tecnologias React Next.js ,  Typescript e TailwindCSS 
+</p>
+<p>
+
+</p>
+
+```
+
+```
+
+<h2>🛠Desenvolvido Por</h2>
+
+[Tuane](https://www.linkedin.com/in/tuane-mendes/) 👩‍🎓
+
+
+
+
+
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
