@@ -11,6 +11,7 @@ import {
 
 type Props = {
     item: Item,
+
 }
 const TableItem = ({item}: Props) => {
     const category = categories[item.category];
@@ -33,7 +34,9 @@ const TableItem = ({item}: Props) => {
         <td>
             <div className='flex justify-start items-center'>
             {categoryExpense}
-            R$ {item.value.toFixed(2)}
+                <div>
+                R$ {item.value.toFixed(2)}
+                </div>
             </div>
         </td>
     </tr>

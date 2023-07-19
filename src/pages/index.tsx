@@ -11,6 +11,7 @@ import Layout from "../components/Layout";
 import TableArea from "../components/TableArea";
 import Resume from "@/components/Resume";
 import TableInsert from "@/components/TableInsert";
+import InputArea from "@/components/InputArea";
 
 
 
@@ -33,8 +34,34 @@ export default function Home() {
 
   }, [list, currentMonth]);
 
+  useEffect(() => {
+    let incomeCount = 0;
+    let expenseCount = 0;
+    
+    for(let i in filteredList){
+
+      if(categories[filteredList[i].category].expense){
+        expenseCount += filteredList[i].value;
+      }else{
+        incomeCount += filteredList[i].value;
+      }
+    }
+
+    setIncome(incomeCount);
+    setExpense(expenseCount);
+    setBalance(incomeCount - expenseCount);
+
+
+  }, [filteredList]);
+
   const handleMonthChange = (newMonth: string) => {
     setCurrentMonth(newMonth);
+  };
+
+  const handleAddItem = (item: Item) => {
+    let newList = [...list];
+    newList.push(item);
+    setList(newList);
   };
 
   return <Layout title="Home Page">
@@ -42,12 +69,18 @@ export default function Home() {
       <Resume income={income} expense={expense} balance={balance}>
 
       </Resume>
+      <div className="flex  w-full mt-6 text-black p-8 shadow-md bg-white rounded-l text-xl">
       <TableInsert 
       currentMonth={currentMonth}
       onMonthChange={handleMonthChange}
       
       
       />
+      <InputArea onAdd={handleAddItem}/>
+
+
+      </div>
+      
 
     
       <TableArea list={filteredList}/>

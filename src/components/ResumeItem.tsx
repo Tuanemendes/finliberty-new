@@ -1,4 +1,3 @@
-import { type } from 'os'
 import React from 'react'
 
 import { BsFillPlusCircleFill,BsDashCircleFill,BsCurrencyDollar } from "react-icons/bs";
@@ -7,13 +6,14 @@ import { IconType } from 'react-icons/lib';
 type Props = {
     title: string;
     value: number;
+    color?: string;
 }
 
 type IconMap = {
     [key: string]: IconType;
   };
 
-const ResumeItem = ({title,value} : Props) => {
+const ResumeItem = ({title,value,color} : Props) => {
     const iconMap : IconMap = {
         'Entrada': BsFillPlusCircleFill,
         'saída': BsDashCircleFill,
@@ -29,7 +29,7 @@ const ResumeItem = ({title,value} : Props) => {
             {Icon && <Icon className='text-lg m-1'/>}
             {title } 
             </div>
-            <div className=''>
+            <div className={`text-xl font-bold ${color}`}>
             R$ {value}
             </div>
       
