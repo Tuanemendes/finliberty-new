@@ -32,13 +32,22 @@
 <h2>💻Detalhes do Projeto</h2>
 
 <p>
-Recriação do projeto controle finaceiro pessoal com a utilização das tecnologias React Next.js ,  Typescript e TailwindCSS 
+Recriação do projeto controle finaceiro pessoal com a utilização das tecnologias React, Next.js ,  Typescript e TailwindCSS 
+
+TypeScript e React, a palavra "props" é usada como uma forma curta de "properties" (propriedades) e se refere aos dados que um componente recebe como entrada. Essas propriedades são como argumentos que podem ser passados para um componente quando ele é utilizado em outras partes do aplicativo. Usar "props" em TypeScript torna seu código mais seguro, pois o TypeScript verifica os tipos das propriedades em tempo de compilação, garantindo que você esteja passando as informações corretas para cada componente.
+</p>
+<p>
+O Tailwind CSS que foi utilizado no projeto  é uma biblioteca de classes utilitárias que facilita a criação de estilos para a aplicação. Em vez de escrever CSS personalizado, podemos usar classes predefinidas do Tailwind para estilizar seus elementos HTML.
+</p>
+<p>
+  O desenvolvimento do projeto foi realizado as criação dos componentes  a pasta types  para organizar e centralizar a definição de tipos personalizados o que melhorar a tipagem e a segurança do código e facilita sua importação e reutilização em diferentes arquivos do projeto
+Os dados do projeto estão armazenados em localStorage  que permanecem disponíveis apenas durante a sessão do navegador. 
 </p>
 <p>
 
 Foi utilidado plug-in especial chamado "Forms" que oferece uma redefinição básica para estilos de formulário. Esse plug-in facilita a estilização de elementos de formulário por meio do uso de classes utilitárias do Tailwind CSS
 
-Documetação -> [tailwindcss/forms](!https://github.com/tailwindlabs/tailwindcss-forms)
+Documentação -> [tailwindcss/forms](https://github.com/tailwindlabs/tailwindcss-forms)
 </p>
 
 ```
