@@ -1,7 +1,6 @@
 import { useState,useEffect } from "react";
 
 import {Item} from "../types/Item";
-import {Category} from "../types/Category";
 import {itens} from "../data/itens";
 import {categories} from "../data/categories";
 import {getCurrentMonth} from"../helpers/dateFilter";
@@ -10,13 +9,7 @@ import{filterListByMonth} from "../helpers/dateFilter";
 import Layout from "../components/Layout";
 import TableArea from "../components/TableArea";
 import Resume from "@/components/Resume";
-import TableInsert from "@/components/TableInsert";
 import InputArea from "@/components/InputArea";
-
-
-
-
-
 
 export default function Home() {
 
@@ -66,18 +59,22 @@ export default function Home() {
 
   return <Layout title="Home Page">
     <div className="flex justify-center flex-col items-center mt-5">
-      <Resume income={income} expense={expense} balance={balance}>
-
-      </Resume>
-      <div className="flex  mt-6 text-black p-8 shadow-md bg-white rounded-l text-xl">
-      <TableInsert 
-      currentMonth={currentMonth}
-      onMonthChange={handleMonthChange} 
-      />
-      <InputArea onAdd={handleAddItem}/>
-      </div>
-      <TableArea list={filteredList}/>
-    </div>
       
+      <Resume income={income} expense={expense} balance={balance}
+       currentMonth={currentMonth}
+       onMonthChange={handleMonthChange} 
+      >
+      </Resume>
+     
+    
+    <InputArea onAdd={handleAddItem}/>
+
+    
+    <div className="flex-wrap">
+    <TableArea list={filteredList}/>
+    </div>
+     
+      
+    </div>
   </Layout>;
 }

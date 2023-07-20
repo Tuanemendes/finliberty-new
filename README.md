@@ -44,7 +44,7 @@ Documetação -> [tailwindcss/forms](!https://github.com/tailwindlabs/tailwindcs
 ```
 npm install -D @tailwindcss/forms
 
-
+npm install @tailwindcss/container-queries
 ```
 
 <h2>🛠Desenvolvido Por</h2>

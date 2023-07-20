@@ -15,7 +15,7 @@ type Props = {
 }
 const TableItem = ({item}: Props) => {
     const category = categories[item.category];
-    const categoryExpense =  category.expense ? <FaAngleDown color="red" />  : <FaAngleUp color="green" />;
+    const categoryExpense =  category.expense ? <FaAngleDown color="red" /> : <FaAngleUp color="green" />;
     const categoryStyle = {
         backgroundColor: category.color,
         color: 'black',

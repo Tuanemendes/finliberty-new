@@ -16,21 +16,21 @@ type IconMap = {
 const ResumeItem = ({title,value,color} : Props) => {
     const iconMap : IconMap = {
         'Entrada': BsFillPlusCircleFill,
-        'saída': BsDashCircleFill,
+        'Saída': BsDashCircleFill,
         'Total': BsCurrencyDollar,
     }
     const Icon = iconMap[title];
 
   return (
     <div className='flex items-center'>
-        <div className='border-2 border-orange-700  p-1 px-6 rounded-2xl shadow-xl'> 
+        <div className='border-2 border-orange-700  p-5 rounded-2xl shadow-xl'> 
 
             <div className='flex justify-between items-center'>
             {Icon && <Icon className='text-lg m-1'/>}
             {title } 
             </div>
             <div className={`text-xl font-bold ${color}`}>
-            R$ {value}
+            R$ {value.toFixed(2)}
             </div>
       
         </div>
