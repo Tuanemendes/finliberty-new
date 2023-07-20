@@ -15,8 +15,12 @@
 <h2>💻 Descrição do Projeto</h2>
 
 <p>
-
+FinLiberty é uma ferramenta que ajuda as pessoas a gerenciar suas finanças pessoais de forma mais eficiente.
+É possivel registrar transações como  inserir suas receitas e despesas por meio das categorias disponiveis, fornecendo detalhes como data, nome e valor. Ver um resumo de entradas e saídas e um balanço final  com  um controle para cada mês. 
 </p>
+
+![image](https://github.com/Tuanemendes/finliberty-new/assets/54903202/a9070ac6-fc7c-4433-b817-3b299129e81e)
+
 
 <h2>💻Tecnologias Utilizadas</h2>
 
