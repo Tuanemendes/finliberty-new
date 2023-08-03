@@ -45,7 +45,7 @@ O Tailwind CSS que foi utilizado no projeto  é uma biblioteca de classes utilit
 </p>
 <p>
   O desenvolvimento do projeto foi realizado as criação dos componentes  a pasta types  para organizar e centralizar a definição de tipos personalizados o que melhorar a tipagem e a segurança do código e facilita sua importação e reutilização em diferentes arquivos do projeto
-Os dados do projeto estão armazenados em localStorage  que permanecem disponíveis apenas durante a sessão do navegador. 
+Os dados do projeto iniciamente estarão disponíveis apenas durante a sessão do navegador o que poderá ser um implementação futura. 
 </p>
 <p>
 
